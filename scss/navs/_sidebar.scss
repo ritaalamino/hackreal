@@ -47,7 +47,7 @@
         margin: 0 0 1rem 0;
         .collapse-header {
           margin: 0;
-          white-space: nowrap;
+          black-space: nowrap;
           padding: .5rem 1.5rem;
           text-transform: uppercase;
           font-weight: 800;
@@ -61,12 +61,12 @@
           color: $gray-900;
           text-decoration: none;
           border-radius: $border-radius;
-          white-space: nowrap;
+          black-space: nowrap;
           &:hover {
-            background-color: $gray-200;
+            background-color: $gray-700;
           }
           &:active {
-            background-color: $gray-300;
+            background-color: $gray-700;
           }
           &.active {
             color: $primary;
@@ -270,7 +270,7 @@
     color: $gray-700;
   }
   hr.sidebar-divider {
-    border-top: 1px solid $gray-200;
+    border-top: 1px solid $gray-900;
   }
   .sidebar-heading {
     color: $gray-500;
@@ -279,7 +279,7 @@
     .nav-link {
       color: $gray-600;
       i {
-        color: $gray-400;
+        color: $gray-700;
       }
       &:active,
       &:focus,
@@ -291,7 +291,7 @@
       }
       // Accordion
       &[data-toggle="collapse"]::after {
-        color: $gray-500;
+        color: $gray-700;
       }
     }
     &.active {
@@ -305,12 +305,12 @@
   }
   // Color the sidebar toggler
   #sidebarToggle {
-    background-color: $gray-200;
+    background-color: $gray-900;
     &::after {
-      color: $gray-500;
+      color: $gray-900;
     }
     &:hover {
-      background-color: $gray-300;
+      background-color: $gray-900;
     }
   }
 }
@@ -318,55 +318,55 @@
 // Sidebar Dark
 .sidebar-dark {
   .sidebar-brand {
-    color: $white;
+    color: $black;
   }
   hr.sidebar-divider {
-    border-top: 1px solid fade-out($white, 0.85);
+    border-top: 1px solid fade-out($black, 0.85);
   }
   .sidebar-heading {
-    color: fade-out($white, 0.6);
+    color: fade-out($black, 0.6);
   }
   .nav-item {
     .nav-link {
-      color: fade-out($white, 0.2);
+      color: fade-out($black, 0.2);
       i {
-        color: fade-out($white, 0.7);
+        color: fade-out($black, 0.7);
       }
       &:active,
       &:focus,
       &:hover {
-        color: $white;
+        color: $black;
         i {
-          color: $white;
+          color: $black;
         }
       }
       // Accordion
       &[data-toggle="collapse"]::after {
-        color: fade-out($white, 0.5);
+        color: fade-out($black, 0.5);
       }
     }
     &.active {
       .nav-link {
-        color: $white;
+        color: $black;
         i {
-          color: $white;
+          color: $black;
         }
       }
     }
   }
   // Color the sidebar toggler
   #sidebarToggle {
-    background-color: fade-out($white, 0.8);
+    background-color: fade-out($black, 0.8);
     &::after {
-      color: fade-out($white, 0.5);
+      color: fade-out($black, 0.5);
     }
     &:hover {
-      background-color: fade-out($white, 0.75);
+      background-color: fade-out($black, 0.75);
     }
   }
   &.toggled {
     #sidebarToggle::after {
-      color: fade-out($white, 0.5);
+      color: fade-out($black, 0.5);
     }
   }
 }
